@@ -8,6 +8,7 @@ In the current version, only the ICAR spatial structure and normal distribution 
 
 ## Example
 
+```r
 ######################################################
 ####### SIMULATING DATA AND FITTING THE MODEL ########
 ######################################################
@@ -87,5 +88,5 @@ fit = SpaVar(formula_mu  = WI + factor(age),
 
 fit
 
-
+```
 

@@ -7,6 +7,11 @@ This package aims to emphasize the spatial structure of dispersion parameters in
 In the current version, only the ICAR spatial structure and normal distribution are included. The package will be completed more in different aspects, such as supporting more distributions and spatial structures.
 
 ## Example
+We simulate the response variable and two covariates, continuous and discrete. The spatial structure of the ICAR is taken into account for 429 districts. Additionally, the variance of the response variable is affected by the two covariates mentioned above and the ICAR spatial structure (31 provinces). A thin line indicates the district border, and a thick line indicates the province border in the following figure.
+
+
+![image](https://user-images.githubusercontent.com/30459265/222126706-60659259-f278-4a97-9459-c2c635894529.png)
+
 
 ```r
 ######################################################

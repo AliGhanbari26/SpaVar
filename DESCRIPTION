@@ -1,0 +1,13 @@
+Package: SpaVar
+Type: Package
+Title: Besides Central Tendency parameters, this package focuses more on spatial correlation in dispersion parameters. 
+Version: 0.1.0
+Author: Ali Ghanbari
+Maintainer: Ali Ghanbari <a.ghanbari541@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.2.2), stats, utils, rstan, LaplacesDemon
+RoxygenNote: 7.2.1

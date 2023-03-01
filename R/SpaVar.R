@@ -30,7 +30,7 @@ setMethod("show",
             print( object@fit.complex.summary.X )
             cat("\n")
             cat("Coefficient simple model (central tendancy): ", "\n")
-            print(print( object@fit.simple.summary.X ))
+            print( object@fit.simple.summary.X )
             cat("\n")
 
             cat("      < complex model spatial parameter(s)>","\n")

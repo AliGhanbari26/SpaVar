@@ -86,4 +86,47 @@ fit = SpaVar(formula_mu  = WI + factor(age),
 fit
 
 ```
+```r
+DIC complex model:  10538.18 
+    simple  model:  12638.14 
+WAIC complex model:  10231.69 
+     simple  model:  12540.06 
 
+Coefficient complex model (central tendancy):  
+                    mean     se_mean       2.5%      97.5%    n_eff      Rhat
+(Intercept)   0.72197492 0.002123780  0.4683816  0.9656499 3523.902 1.0000502
+WI            2.20080706 0.001055274  2.0742191  2.3263146 3576.027 0.9999368
+factor(age)2  0.40110485 0.002308145  0.1020203  0.7034635 4524.108 0.9998764
+factor(age)3  0.05914021 0.002645949 -0.2697902  0.4005724 4221.852 0.9998280
+factor(age)4 -1.17831876 0.002210866 -1.4284300 -0.9339829 3229.766 0.9998972
+
+Coefficient simple model (central tendancy):  
+                   mean     se_mean       2.5%      97.5%    n_eff      Rhat
+(Intercept)   1.3753521 0.009061376  0.6689083  2.0948107 1606.660 0.9996256
+WI            2.0244127 0.002947587  1.7531254  2.2944601 2204.706 1.0017068
+factor(age)2  0.5109182 0.012509091 -0.4187465  1.4936774 1559.313 1.0007132
+factor(age)3 -0.2061040 0.014399381 -1.3672445  0.9065953 1573.793 1.0003234
+factor(age)4 -1.6258537 0.009362696 -2.3426071 -0.8953636 1569.403 1.0000438
+                   mean     se_mean       2.5%      97.5%    n_eff      Rhat
+(Intercept)   1.3753521 0.009061376  0.6689083  2.0948107 1606.660 0.9996256
+WI            2.0244127 0.002947587  1.7531254  2.2944601 2204.706 1.0017068
+factor(age)2  0.5109182 0.012509091 -0.4187465  1.4936774 1559.313 1.0007132
+factor(age)3 -0.2061040 0.014399381 -1.3672445  0.9065953 1573.793 1.0003234
+factor(age)4 -1.6258537 0.009362696 -2.3426071 -0.8953636 1569.403 1.0000438
+
+      < complex model spatial parameter(s)> 
+Sigma spatial ICAR parameter (central tendancy):  
+       mean     se_mean 
+0.844007528 0.002925893 
+
+Sigma spatial ICAR parameter (dispersion):  
+       mean     se_mean 
+0.879940303 0.001501999 
+
+      < simple model spatial parameter(s)> 
+Sigma spatial ICAR parameter (central tendancy):  
+      mean    se_mean 
+0.54166592 0.07986053 
+```
+
+A small amount of DIC, WAIC, and beta demonstrates the superiority of the complex model, which considers spatial structure on variance.

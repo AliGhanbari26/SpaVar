@@ -16,7 +16,6 @@ setClass("SpaVar", slots=
            )
 )
 
-# object = output
 setMethod("show",
           "SpaVar",
           function(object) {

@@ -23,10 +23,6 @@ set.seed(26)
 # install & load
 devtools::install_github("AliGhanbari26/GPRMortality")
 library("SpaVar")
-library(LaplacesDemon)
-library(rstan)
-load("data/adjMatMu.RData")
-load("data/adjMatVar.RData")
 
 # The adjacent matrix for 429 districts of Iran is embedded into the package,
 # and it is used as an adjacent matrix for the spatial structure of

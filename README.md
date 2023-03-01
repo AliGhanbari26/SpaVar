@@ -69,11 +69,7 @@ PHI = exp(PHI_x + PHI_spa)
 # simulate response
 y  = rnorm(n,MU,PHI)
 
-# fit & compare
-# model criterias such as DIC, WAIC, beta (se), beta (bias)
-
-formula_mu  = formula("y~WI + factor(age)")
-formula_var = formula(" ~WI + factor(age)")
+# fit & compare model criterias such as DIC, WAIC, beta (se), beta (bias)
 
 fit = SpaVar(formula_mu  = WI + factor(age),
                   formula_var = WI + factor(age),

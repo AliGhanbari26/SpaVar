@@ -55,12 +55,12 @@ beta_x = rnorm(p,0,1)
 D_Mu = diag(apply(adjMatMu,1,sum))
 omega_Mu = .5*(   D_Mu -.99*adjMatMu  )
 d_Mu =  t(LaplacesDemon::rmvnp(1 , rep(0,n_Mu), omega_Mu ))
-MU = X
+MU = X%*%beta_x + d_Mu[index_locMu] + rnorm(n,0,.1)
 
 # simulate the dispersion vector that consists of two parts,
 # spatial (ICAR) and non-spatial (covariate) parts
 beta_z = rnorm(q,0,.5)
-PHI_x =  ( Z
+PHI_x =  ( Z%*%beta_z)+ rnorm(n,0,.05)
 D_Var = diag(apply(adjMatVar,1,sum))
 omega_Var = .5*(   D_Var -.99*adjMatVar  )
 d_Var =  t(LaplacesDemon::rmvnp(1 , rep(0,n_Var), omega_Var ))
